@@ -1,4 +1,4 @@
-# Objective1
+# Objective
 
 Develop a twitter like social networking services where users can interact with one another by sharing messages 
 
