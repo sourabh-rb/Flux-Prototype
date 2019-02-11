@@ -1,0 +1,14 @@
+language: php
+
+php:
+  - 7.1.3
+
+before_script:
+  - cp .env.travis .env
+  - mysql -e 'create database task;'
+  - composer self-update
+  - composer install --no-interaction
+  - php artisan key:generate
+
+script:
+  - vendor/bin/phpunit
